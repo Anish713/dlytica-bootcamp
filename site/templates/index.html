@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Salary Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="years_experience">Years of Experience:</label>
+            <input type="number" id="years_experience" name="years_experience" required>
+            <label for="years_ahead">Years Ahead:</label>
+            <input type="number" id="years_ahead" name="years_ahead" required>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
